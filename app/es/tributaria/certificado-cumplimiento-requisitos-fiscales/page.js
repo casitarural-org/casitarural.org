@@ -8,7 +8,7 @@ export default function Tributaria() {
   return (
     <ul className={classnames('flex-2', documentGrid)}>
       <li>
-        <Link href="/tributaria/Certificado-de-cumplimiento-de-requisitos-fiscales.pdf" target="_blank">
+        <Link href="/tributaria/Anexo 1.CERTIFICADO DE CUMPLIMIENTO_Firmado.pdf" target="_blank">
           <Image src="/tributaria/certificado-de-cumplimiento.jpg" alt="Certificado de cumplimiento" width={500} height={369} />
           Certificado de cumplimiento
         </Link>
