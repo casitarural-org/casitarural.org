@@ -1,0 +1,27 @@
+.header {
+  margin: 42px;
+  color: #1aada3;
+}
+
+.main {
+  margin: auto;
+  padding: 18px;
+}
+
+@media (min-width: 768px) {
+  .main {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main {
+    width: 1170px;
+  }
+}

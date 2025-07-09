@@ -5,7 +5,7 @@ import { main, h1, nav, link, socials } from './page.module.css';
 export default function SplashScreen() {
   return (
     <main className={main}>
-      <h1 className={h1}>CASITA RURAL</h1>
+      <h1 className={h1}>Casita rural</h1>
       <nav className={nav}>
         <Link href="/es/casita-rural" className={link}>Español</Link>
         <Link href="/en/casita-rural" className={link}>English</Link>
