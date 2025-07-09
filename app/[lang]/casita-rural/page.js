@@ -14,8 +14,15 @@ const IMAGE_DATA = [
   { url: '/Semillero-Día-1_15.02-29.jpg', size: [1500, 1000] },
 ];
 
-export default function SplashScreen() {
-  // const { lang } = React.use(params);
+const LOCALIZED_STRINGS = {
+  description: {
+    es: 'Somos una organización comunitaria sin ánimo de lucro. Creamos espacios para compartir, escucharnos, acompañarnos y educarnos. Tenemos diversos programas para acercar a niños y jóvenes rurales al arte y para promover el intercambio cultural entre lo rural y lo urbano. Le damos fuerza a todo lo que nos ayuda a ser mejores juntos.',
+    en: 'We are a non-profit community organization. We create spaces to share, listen, support, and educate ourselves. We have various programs to bring rural children and youth closer to the arts and to promote cultural exchange between rural and urban areas. We empower everything that helps us be better together.',
+  },
+};
+
+export default function SplashScreen({ params }) {
+  const { lang } = React.use(params);
   
   return <>
     <div className="flex gap-12">
@@ -25,9 +32,16 @@ export default function SplashScreen() {
       <div className="flex-1">
         <h1>Casita Rural</h1>
         <p>
-          Somos una organización comunitaria sin ánimo de lucro. Creamos espacios para compartir, escucharnos, acompañarnos y educarnos. Tenemos diversos programas para acercar a niños y jóvenes rurales al arte y para promover el intercambio cultural entre lo rural y lo urbano. Le damos fuerza a todo lo que nos ayuda a ser mejores juntos.
+          {LOCALIZED_STRINGS.description[lang]}
         </p>
       </div>
     </div>
   </>;
 }
+
+export const generateStaticParams = () => {
+  return [
+    { lang: 'es' },
+    { lang: 'en' },
+  ];
+};
