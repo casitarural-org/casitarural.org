@@ -1,0 +1,9 @@
+.documentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  text-transform: uppercase;
+  color: #5ba29a;
+  font-size: 18px;
+  font-weight: 400;
+}

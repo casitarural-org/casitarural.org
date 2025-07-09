@@ -23,8 +23,8 @@ export default function Menu() {
         <PageLink href="blog" label="Blog" />
         <PageLink href="videos" label="Videos" />
         <PageLink href="aporta" label="Aporta" />
-        <PageLink href="contacto" label="Contacto" />
-        <PageLink href="tributaria" label="Tributaria" /> */}
+        <PageLink href="contacto" label="Contacto" /> */}
+        <PageLink href="tributaria/balance-de-gestion" label="Tributaria" />
       </ul>
     </nav>
   );

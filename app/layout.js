@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${nunitoSans.variable} antialiased`}>
+      <body className={`${nunitoSans.className} antialiased`}>
         {children}
       </body>
     </html>
