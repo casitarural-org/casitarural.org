@@ -1,0 +1,39 @@
+.main {
+  background-image: url('/Jerónimo-Gomez-Murillo-editada-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+  gap: 24px;
+}
+
+.h1 {
+  font-size: 48px;
+  letter-spacing: 14px;
+  font-weight: normal;
+}
+
+.nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.link {
+  display: block;
+  padding: 10px 48px;
+  border: 1px solid white;
+  font-size: 19px;
+}
+
+.socials {
+  margin-left: 64px;
+  display: flex;
+  font-size: 2.5em;
+  gap: 1rem;
+}
